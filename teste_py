@@ -1,0 +1,28 @@
+import os
+import pandas as pd
+
+os.system('cls')
+#print ("as")
+
+# arquivo=open('E:\\python20221229\\texto.txt','a')
+
+# print(arquivo.write("\nTEstando o arquivo em questão, escrita e depois a leitura"))
+# print(f'temos o total de {arquivo.tell()} caracteres')
+# arquivo=open('E:\\python20221229\\texto.txt','r')
+# print(arquivo.read())
+# arquivo.close()
+
+arquivo=str(input("Digite o nome do arquivo"))
+arquivo=arquivo + ".txt"
+filename=open(arquivo, 'a')
+filename.write("\nTestando entra de texto")
+
+filename.close
+filename=open(arquivo, 'r')
+print(filename.read())
+print(filename.tell())
+if "testando" in filename:
+    print("Palavra encontrada")
+else:
+    print("Não encontrada")
+filename.close
